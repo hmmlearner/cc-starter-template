@@ -1,0 +1,18 @@
+{
+  "model": "sonnet",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit(src/**)"
+    ],
+    "ask": [
+      "WebFetch"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(rm -rf /*)",
+      "Read(.env)",
+      "Read(secrets/**)"
+    ]
+  }
+}
